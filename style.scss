@@ -1,0 +1,51 @@
+body {
+  font-family: 'Rubik', 'Segoe UI', 'San Francisco', 'Calibri', Arial, sans-serif;
+  margin: 0;
+}
+
+.c-hero-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  
+  &__item {
+    flex-grow: 1;
+    background: #ccc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    transition: .2s all;
+    cursor: pointer;
+    padding: 2em;
+    box-sizing: border-box;
+    text-align: center;
+    
+    &:hover {
+      flex-grow: 2;
+      box-shadow: inset 0 0 0 100vmax #000067 ;
+    }
+    
+    &:nth-child(1) {
+      background: #222 url(http://cdn.wallpapersafari.com/3/95/ZJCeyK.jpg) no-repeat center center;
+    }
+    
+    &:nth-child(2) {
+      background: #222 url(http://www.hdwallpapersforiphone6.com/wp-content/uploads/Space/Look%20Earth%20space%20iPhone%206%20Wallpapers.jpg) no-repeat center center;
+    }
+    
+    &:nth-child(3) {
+      background: #222 url(http://www.hd-freewallpapers.com/earth-wallpaper/desktop-pictures-of-the-earth-from-space-wallpaper.jpg) no-repeat center center;
+    }
+  }
+  
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    color: #fff;
+    transition: .2s all;
+  }
+}
